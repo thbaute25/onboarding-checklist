@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "checklist-onboarding-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/checklistOnboarding/ChecklistOnboardingWebPart.js",
+          "manifest": "./src/webparts/checklistOnboarding/ChecklistOnboardingWebPart.manifest.json"
+        }
+      ]
+    },
+    "home-onboarding-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/homeOnboarding/HomeOnboardingWebPart.js",
+          "manifest": "./src/webparts/homeOnboarding/HomeOnboardingWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ChecklistOnboardingWebPartStrings": "lib/webparts/checklistOnboarding/loc/{locale}.js",
+    "HomeOnboardingWebPartStrings": "lib/webparts/homeOnboarding/loc/{locale}.js"
+  }
+}
